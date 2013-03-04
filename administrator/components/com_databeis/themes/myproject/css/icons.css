@@ -1,0 +1,413 @@
+/* ICONS */
+/* Return to site */
+.pf-return-link span{
+
+}
+/* Hide Text */
+.panel_edit{
+text-indent:-9999px;
+height:16px;
+width:16px;
+}
+.section_edit span,.activity_delete{
+text-indent:-9999px;
+height:16px;
+width:16px;
+display:inline-block;
+}
+/* Activity Stream */
+#pf_panel_cp_activitystream ul li{
+padding-left:26px;
+}
+
+/* Inline Menus */
+/*
+.pf_inline_menu{
+background:#F8F8F7 url(../images/arrow_down.png) no-repeat 50% 50%;
+}
+.pf_inline_menu:hover{
+background:#EEE url(../images/arrow_down.png) no-repeat 50% 50%;
+}
+*/
+.pf_comments a span{
+background:url(../images/icons/16/comments.png) no-repeat 0 0;
+}
+.pf_complete a span{
+background:url(../images/icons/16/action_check.png) no-repeat 0 0;
+}
+.pf_edit a span{
+background:url(../images/icons/16/reply.png) no-repeat 0 0;
+}
+.pf_tasks a span{
+background:url(../images/icons/16/arrow_next.png) no-repeat 0 0;
+}
+.pf_timeadd a span{
+background:url(../images/icons/16/time.png) no-repeat 0 0;
+}
+.pf_website a span{
+background:url(../images/icons/16/globe.png) no-repeat 0 0;
+}
+/* Hover */
+.pf_comments a:hover span{
+background:url(../images/icons/color/16/comments.png) no-repeat 0 0;
+}
+.pf_complete a:hover span{
+background:url(../images/icons/color/16/action_check.png) no-repeat 0 0;
+}
+.pf_edit a:hover span{
+background:url(../images/icons/color/16/reply.png) no-repeat 0 0;
+}
+.pf_tasks a:hover span{
+background:url(../images/icons/color/16/arrow_next.png) no-repeat 0 0;
+}
+.pf_timeadd a:hover span{
+background:url(../images/icons/color/16/time.png) no-repeat 0 0;
+}
+.pf_website a:hover span{
+background:url(../images/icons/color/16/globe.png) no-repeat 0 0;
+}
+/*
+/* Toolbar */
+.pf_fm_file span,.pf_fm_doc span,.pf_fm_folder span{
+padding-left:20px;
+padding-top:2px;
+}
+.pf_fm_file span{
+padding-bottom:2px;
+}
+/* Save */
+.pf_save a span{
+background:url(../images/icons/16/save.png) no-repeat 0 50%;
+}
+.pf_apply a span,
+.pf_accept a span,
+.pf_approve a span,
+.pf_new_task a span{
+background:url(../images/icons/16/action_check.png) no-repeat 0 50%;
+}
+.pf_cancel a span,
+.pf_deny a span{
+background:url(../images/icons/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_new a span,
+.pf_add a span,
+.pf_new_project a span,
+.pf_install a span{
+background:url(../images/icons/16/action_add.png) no-repeat 0 50%;
+}
+.pf_copy a span,
+.pf_uninstall a span{
+background:url(../images/icons/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_archive a span{
+background:url(../images/arrow_down.png) no-repeat 0 50%;
+}
+.pf_delete a span{
+background:url(../images/icons/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_config a span{
+background:url(../images/icons/16/options.png) no-repeat 0 50%;
+}
+.pf_order a span{
+background:url(../images/icons/16/download.png) no-repeat 0 50%;
+}
+.pf_move a span{
+background:url(../images/icons/16/arrow_next.png) no-repeat 0 50%;
+}
+.pf_new_folder a span,
+.pf_fm_folder span{
+background:url(../images/icons/16/folder.png) no-repeat 0 50%;
+}
+.pf_new_file a span,
+.pf_fm_file span{
+background:url(../images/icons/16/file.png) no-repeat 0 50%;
+}
+.pf_new_note a span,
+.pf_fm_doc span{
+background:url(../images/icons/16/application.png) no-repeat 0 50%;
+}
+.pf_month a span,
+.pf_new_event a span{
+background:url(../images/icons/16/calendar.png) no-repeat 0 50%;
+}
+.pf_week a span{
+background:url(../images/icons/16/calendar.png) no-repeat 0 50%;
+}
+.pf_day a span{
+background:url(../images/icons/16/calendar.png) no-repeat 0 50%;
+}
+.pf_back a span,
+.pf-return-link span{
+background:url(../images/icons/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_import a span,
+.pf_new_user a span{
+background:url(../images/icons/16/user.png) no-repeat 0 50%;
+}
+.pf_access a span{
+background:url(../images/icons/16/login.png) no-repeat 0 50%;
+}
+.pf_join a span{
+background:url(../images/icons/16/arrow_down.png) no-repeat 0 50%;
+}
+.pf_subscribe a span{
+background:url(../images/icons/16/letter.png) no-repeat 0 50%;
+}
+.pf_unsubscribe a span{
+background:url(../images/icons/16/action_remove.png) no-repeat 0 50%;
+}
+.pf_show a span{
+background:url(../images/icons/16/maximize.png) no-repeat 0 50%;
+}
+.pf_groups a span{
+background:url(../images/icons/16/group.png) no-repeat 0 50%;
+}
+.pf_reply a span{
+background:url(../images/icons/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_print a span{
+background:url(../images/icons/16/print.png) no-repeat 0 50%;
+}
+.pf_new_milestone a span{
+background:url(../images/icons/16/star.png) no-repeat 0 50%;
+}
+.pf_new_topic a span{
+background:url(../images/icons/16/comments.png) no-repeat 0 50%;
+}
+/* Hover */
+.pf_save a:hover span{
+background:url(../images/icons/color/16/save.png) no-repeat 0 50%;
+}
+.pf_apply a:hover span,
+.pf_accept a:hover span,
+.pf_approve a:hover span,
+.pf_new_task a:hover span{
+background:url(../images/icons/color/16/action_check.png) no-repeat 0 50%;
+}
+.pf_cancel a:hover span,
+.pf_deny a:hover span,
+.activity_delete{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_new a:hover span,
+.pf_add a:hover span,
+.pf_new_project a:hover span,
+.pf_install a:hover span{
+background:url(../images/icons/color/16/action_add.png) no-repeat 0 50%;
+}
+.pf_copy a:hover span,
+.pf_uninstall a:hover span{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_archive a:hover span{
+background:url(../images/icons/color/16/arrow_down.png) no-repeat 0 50%;
+}
+.pf_delete a:hover span{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_config a:hover span{
+background:url(../images/icons/color/16/options.png) no-repeat 0 50%;
+}
+.pf_order a:hover span{
+background:url(../images/icons/color/16/download.png) no-repeat 0 50%;
+}
+.pf_move a:hover span{
+background:url(../images/icons/color/16/arrow_next.png) no-repeat 0 50%;
+}
+.pf_new_folder a:hover span{
+background:url(../images/icons/color/16/folder.png) no-repeat 0 50%;
+}
+.pf_new_file a:hover span{
+background:url(../images/icons/color/16/file.png) no-repeat 0 50%;
+}
+.pf_new_note a:hover span{
+background:url(../images/icons/color/16/application.png) no-repeat 0 50%;
+}
+.pf_month a:hover span,
+.pf_new_event a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_week a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_day a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_back a:hover span{
+background:url(../images/icons/color/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_import a:hover span,
+.pf_new_user a:hover span{
+background:url(../images/icons/color/16/user.png) no-repeat 0 50%;
+}
+.pf_access a:hover span{
+background:url(../images/icons/color/16/login.png) no-repeat 0 50%;
+}
+.pf_join a:hover span{
+background:url(../images/icons/color/16/arrow_down.png) no-repeat 0 50%;
+}
+.pf_subscribe a:hover span{
+background:url(../images/icons/color/16/letter.png) no-repeat 0 50%;
+}
+.pf_unsubscribe a:hover span{
+background:url(../images/icons/color/16/action_remove.png) no-repeat 0 50%;
+}
+.pf_show a:hover span{
+background:url(../images/icons/color/16/maximize.png) no-repeat 0 50%;
+}
+.pf_groups a:hover span{
+background:url(../images/icons/color/16/group.png) no-repeat 0 50%;
+}
+.pf_reply a:hover span{
+background:url(../images/icons/color/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_print a:hover span{
+background:url(../images/icons/color/16/print.png) no-repeat 0 50%;
+}
+.pf_new_milestone a:hover span{
+background:url(../images/icons/color/16/star.png) no-repeat 0 50%;
+}
+.pf_new_topic a:hover span{
+background:url(../images/icons/color/16/comments.png) no-repeat 0 50%;
+}
+/* Doc Type Icons */
+.ai span,
+.eps span,
+.svg span{
+background:url(../images/icons/doc/icon_vector.gif) no-repeat 0 50%;
+}
+.css span{
+background:url(../images/icons/doc/icon_css_incl.gif) no-repeat 0 50%;
+}
+.csv span{
+background:url(../images/icons/doc/icon_xls.gif) no-repeat 0 50%;
+}
+.doc span{
+background:url(../images/icons/doc/icon_doc.gif) no-repeat 0 50%;
+}
+.exe span{
+background:url(../images/icons/doc/icon_log.gif) no-repeat 0 50%;
+}
+.fla span{
+background:url(../images/icons/doc/icon_fla.gif) no-repeat 0 50%;
+}
+.gif span{
+background:url(../images/icons/doc/icon_image.gif) no-repeat 0 50%;
+}
+.tml span{
+background:url(../images/icons/doc/icon_html.gif) no-repeat 0 50%;
+}
+.jpg span,
+.jpeg span{
+background:url(../images/icons/doc/icon_image.gif) no-repeat 0 50%;
+}
+.odt span{
+background:url(../images/icons/doc/icon_webdev.gif) no-repeat 0 50%;
+}
+.mov span{
+background:url(../images/icons/doc/icon_mov.gif) no-repeat 0 50%;
+}
+.pdf span{
+background:url(../images/icons/doc/icon_pdf.gif) no-repeat 0 50%;
+}
+.png span{
+background:url(../images/icons/doc/icon_image.gif) no-repeat 0 50%;
+}
+.ppt span{
+background:url(../images/icons/doc/icon_ppt.gif) no-repeat 0 50%;
+}
+.psd span{
+background:url(../images/icons/doc/icon_photoshop.gif) no-repeat 0 50%;
+}
+.rtf span{
+background:url(../images/icons/doc/icon_generic.gif) no-repeat 0 50%;
+}
+.sql span{
+background:url(../images/icons/doc/icon_sql.gif) no-repeat 0 50%;
+}
+.txt span{
+background:url(../images/icons/doc/icon_txt.gif) no-repeat 0 50%;
+}
+.xls span{
+background:url(../images/icons/doc/icon_xls.gif) no-repeat 0 50%;
+}
+.zip span{
+background:url(../images/icons/doc/icon_zip.gif) no-repeat 0 50%;
+}
+/* Calendar */
+.pf_addevent span{
+display:block;
+height:16px;
+width:16px;
+text-indent:-9999px;
+background:url(../images/icons/16/action_add.png) no-repeat 50% 50%;
+}
+.pf_addevent span:hover{
+background:url(../images/icons/color/16/action_add.png) no-repeat 50% 50%;
+}
+/* Icon Background */
+.panel_edit,.section_edit{
+background:url(../images/icons/16/reply.png) no-repeat 50% 50% !important;
+}
+
+/* Status */
+.activity_status{
+background:url(../images/icons/16/quote_open.png) no-repeat 5px 10px;
+}
+.activity_status_inner{
+background:url(../images/icons/16/quote_close.png) no-repeat 100% 100%;
+}
+/* Activity Stream */
+.tasks_task_update_progress,.tasks_task_save_task,.tasks_task_delete,.tasks_task_update_task,.tasks_task_save_comment,
+.tasks_task_reorder {
+background:url(../images/icons/16/action_check.png) no-repeat 3px 5px;
+}
+.profile_milestone_update,.tasks_milestone_update_progress,.tasks_task_save_milestone,.tasks_task_update_milestone {
+background:url(../images/icons/16/star.png) no-repeat 3px 5px;
+}
+.time_task_update,.time_task_save,.time_task_delete {
+background:url(../images/icons/16/time.png) no-repeat 3px 5px;
+}
+.projects_task_update,.projects_task_save,.projects_task_delete {
+background:url(../../default/images/icons/16/application.png) no-repeat 3px 5px;
+}
+.calendar_task_update,.calendar_task_save,.calendar_task_delete {
+background:url(../images/icons/16/calendar.png) no-repeat 3px 5px;
+}
+.controlpanel_setactivity{
+background:url(../images/icons/16/user.png) no-repeat 3px 5px;
+}
+.filemanager_task_update_file,.filemanager_task_save_file,.filemanager_task_delete_file,
+.filemanager_pro_task_update_file,.filemanager_pro_task_save_file,.filemanager_pro_task_delete_file {
+background:url(../images/icons/16/save.png) no-repeat 3px 5px;
+}
+.filemanager_task_update_folder,.filemanager_task_save_folder,.filemanager_task_delete_folder,
+.filemanager_pro_task_update_folder,.filemanager_pro_task_save_folder,.filemanager_pro_task_delete_folder {
+background:url(../images/icons/16/folder.png) no-repeat 3px 5px;
+}
+.filemanager_task_update_note,.filemanager_task_save_note,.filemanager_task_delete_note,
+.filemanager_pro_task_update_note,.filemanager_pro_task_save_note,.filemanager_pro_task_delete_note {
+background:url(../images/icons/16/file.png) no-repeat 3px 5px;
+}
+.board_task_update_topic,.board_task_save_topic,.board_task_delete_topic,.board_task_save_reply,.board_task_subscribe,.board_task_unsubscribe {
+background:url(../images/icons/16/comments.png) no-repeat 3px 5px;
+}
+.profile_task_update {
+background:url(../images/icons/16/user.png) no-repeat 3px 5px;
+}
+.users_task_update,.users_task_save,.users_task_delete {
+background:url(../images/icons/16/user.png) no-repeat 3px 5px;
+}
+.groups_task_update,.groups_task_save,.groups_task_delete {
+background:url(../images/icons/16/group.png) no-repeat 3px 5px;
+}
+.time_task_delete,.projects_task_delete,.tasks_task_delete,
+.calendar_task_delete,.groups_task_delete,.users_task_delete,
+.board_task_unsubscribe,.filemanager_task_delete_note,.filemanager_task_delete_file,.filemanager_task_delete_folder{
+text-decoration:line-through;
+color:#888 !important;
+}
+/* MyProject */
+#pf_panel_nav_section_subnav .pf_navigation span{
+background:none !important;
+}

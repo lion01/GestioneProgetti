@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Databeis</name>
+	<creationDate>2012/06</creationDate>
+	<author>DataBeis</author>
+	<authorEmail>support@databeis.net</authorEmail>
+	<authorUrl>http://www.databeis.net</authorUrl>
+	<copyright>Copyright 2006-2012 DataBeis</copyright>
+	<license>GNU/General Public License</license>
+	<version>3.0.10 Stable</version>
+	<description></description>
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">_install/mysql/_install.mysql.utf8.sql</file>
+			<file driver="mysql">_install/mysql/_install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">_install/mysql/_uninstall.mysql.utf8.sql</file>
+			<file driver="mysql">_install/mysql/_uninstall.mysql.nonutf8.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+		<filename>index.html</filename>
+		<filename>databeis.php</filename>
+		<filename>router.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/databeis/index.html</filename>
+		<filename>views/databeis/tmpl/index.html</filename>
+		<filename>views/databeis/tmpl/default.xml</filename>
+	</files>
+	<administration>
+		<menu img="components/com_databeis/_core/images/16_databeis.png">Databeis</menu>
+		<files folder="administrator/components/com_databeis/">
+		    <folder>_core</folder>
+		    <folder>_dev</folder>
+		    <folder>_install</folder>
+		    <folder>languages</folder>
+		    <folder>mods</folder>
+		    <folder>panels</folder>
+		    <folder>processes</folder>
+		    <folder>sections</folder>
+		    <folder>themes</folder>
+			<filename>admin.databeis.php</filename>
+            <filename>index.html</filename>
+            <filename>LICENSE.php</filename>
+            <filename>version.php</filename>
+		</files>
+	</administration>
+</install>

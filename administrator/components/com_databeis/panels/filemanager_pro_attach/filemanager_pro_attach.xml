@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+
+    <name>filemanager_pro_attach</name>
+	<title>FMPRO_ATTACH</title>
+	<author>DataBeis</author>
+	<website>http://www.databeis.net</website>
+	<version>1300</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2009-2010 DataBeis</copyright>
+	<date>2012</date>
+	
+	<position>task_details_right</position>
+	
+	<languages>
+	    <language name="english">filemanager_pro_attach/english.ini</language>
+	</languages>
+	
+	<cache>1</cache>
+	<cache_trigger>project,user_id,item_id</cache_trigger>
+	
+	<score>1</score>
+	<flag></flag>
+	
+	<show_title>1</show_title>
+	
+	<files folder="filemanager_pro_attach"></files>
+	
+	<install_file>install.php</install_file>
+	
+	<uninstall_sql>
+		<sql>UPDATE `#__pf_panels` SET enabled = '1' WHERE name = 'task_attachments';</sql>
+	</uninstall_sql>
+	
+</install>

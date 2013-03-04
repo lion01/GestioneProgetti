@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+    <name>hide_buttons</name>
+	<title>PROC_HIDEBUTTONS</title>
+	<author>DataBeis</author>
+	<website>http://www.databeis.net</website>
+	<version>1100</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 DataBeis</copyright>
+	<date>2010/11</date>
+	<event>system_startup</event>
+	
+	<files folder="data"></files>
+	
+	<languages>
+	    <language name="english">data/english.ini</language>
+	</languages>
+	
+</install>

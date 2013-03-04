@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<state>
+		<name>Link</name>
+		<description>Link parameters...</description>
+		<params>
+			<param name="menu_image" type="imagelist" directory="/media/com_adminpraise/images/menu" hide_default="1" default="" label="Menu Image" description="PARAMMENUIMAGE" />
+			<param name="menu_class" type="text" size="20" default="" label="Menu Item Class" description="PARAMPAGECLASSSFX" />
+		</params>
+	</state>
+</metadata>

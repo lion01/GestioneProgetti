@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+
+    <name>activitystream</name>
+	<title>ACTIVITY_STREAM</title>
+	<author>DataBeis</author>
+	<website>http://www.databeis.net</website>
+	<version>2001</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2009-2011 DataBeis</copyright>
+	<date>2011/11</date>
+	
+	<event>system_startup</event>
+
+    <languages>
+	    <language name="english">activitystream/activitystream_en.ini</language>
+	    <language name="german">activitystream/activitystream_de.ini</language>
+	</languages>
+	
+	<install_sql>
+		<sql>CREATE TABLE IF NOT EXISTS `#__pf_log` 
+           (`id` int(11) NOT NULL auto_increment,
+            `user_id` int(11) NOT NULL,
+            `project` int(11) NOT NULL,
+            `section` varchar(56) NOT NULL,
+            `task` varchar(56) NOT NULL,
+            `action_section` varchar(56) NOT NULL,
+            `action_task` varchar(56) NOT NULL,
+            `action_id` int(11) NOT NULL,
+            `action_title` varchar(255) NOT NULL,
+            `cdate` int(11) NOT NULL,
+            PRIMARY KEY  (`id`),
+            KEY `user_id` (`user_id`)
+            )
+		</sql>
+	</install_sql>
+	
+	<files folder="activitystream"></files>
+	
+	<uninstall_sql>
+		<sql>TRUNCATE TABLE `#__pf_log`</sql>
+		<sql>DROP TABLE `#__pf_log`</sql>
+	</uninstall_sql>
+	
+	<uninstall_ext>
+	    <extension type="panel">cp_activitystream</extension>
+	</uninstall_ext>
+	
+</install>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<state>
+		<name>Separator</name>
+		<description>Separator parameters...</description>
+		<params>
+			<param name="menu_class" type="text" size="20" default="" label="Menu Item Class" description="PARAMPAGECLASSSFX" />
+		</params>
+	</state>
+</metadata>

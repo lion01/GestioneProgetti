@@ -1,0 +1,56 @@
+.color5 #pf-header{
+background:#5A5C57 url(../../images/theme5/header.png) repeat-x 0 0;
+}
+.color5 #pf-header #pf_panel_nav_section,
+.color5 #pf_panel_nav_section_subnav .pf_navigation:first-of-type {
+background:url(../../images/theme5/subnav.png) repeat-x scroll 0 0 transparent;
+}
+.color5 #pf_panel_nav_section li a,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a{
+color:#111;
+text-shadow:0px 1px 1px #FFF;
+font-weight:bold;
+}
+.color5 #pf-header #pf_panel_nav_section li a,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:hover,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:active {
+color:#FFF;
+text-shadow:0px -1px 1px #333;
+}
+.color5 #pf_panel_nav_section .pf_navigation li.active_section a,
+.color5 #pf_panel_nav_section .pf_navigation li a:hover,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a:hover {
+background:url(../../images/theme5/subnav.png) repeat-x scroll 0 -40px transparent;
+text-shadow:0px -1px 1px #333;
+color:#FFF;
+}
+.color5 #pf_panel_nav_section_subnav .pf_navigation:first-of-type,
+.color5 #pf-header #pf_panel_nav_section li a,
+.color5 .pf_welcome,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:hover,
+.color5 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:active,
+.color5 #pf_panel_quicklink_project select {
+border-color:#111;
+}
+.color5 dl.tabs,
+.color5 div.current,
+.color5 dl.tabs dt.open {
+border-color:#CCC;
+}
+.color5 #pf_panel_nav_section_subnav .pf_navigation:first-of-type{
+-moz-box-shadow:0 1px 1px #444;
+-webkit-box-shadow:0 1px 1px #444;
+box-shadow:0 1px 1px #444;
+}
+.color5 dl.tabs {
+background:#EEE;
+}
+.color5 dl.tabs dt{
+color:#333;
+text-shadow:0 1px 1px #BBB;
+}
+.color5 dl.tabs dt.open {
+text-shadow:none;
+}

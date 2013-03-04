@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+    <name>files_panel</name>
+	<title>FILES_PANEL</title>
+	<author>Asadullo Ahmedov</author>
+	<website>http://www.databeis.net</website>
+	<email>asadullo.ahmedov@gmail.com</email>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2012 Asadullo Ahmedov</copyright>
+	<date>2012</date>
+	<languages>
+	    <language name="english">data/english.ini</language>
+	</languages>
+	<position>controlpanel_right</position>
+	<cache>1</cache>
+	<cache_trigger>project,user_id</cache_trigger>
+	<score>0</score>
+	<flag></flag>
+	<show_title>1</show_title>
+	<override_title></override_title>
+	<files folder="data"></files>
+	<install_file></install_file>
+	<uninstall_file></uninstall_file>
+	<install_sql></install_sql>
+	<uninstall_sql></uninstall_sql>
+	<params>
+	   <param type="text" name="limit" value="10" title="PFL_LIST_LIMIT" desc="PFL_LIST_LIMIT_DESC" size="5"/>
+	</params>
+</install>

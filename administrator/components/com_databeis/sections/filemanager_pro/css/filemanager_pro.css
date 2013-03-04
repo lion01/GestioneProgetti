@@ -1,0 +1,106 @@
+/* Navigation tree */
+#pf-body div.pf_tree_wrapper ul
+{
+    margin:0px;
+}
+ul.pf_tree li ul
+{
+    list-style:none !important;
+    white-space:nowrap !important;
+    
+    line-height:16px;
+    margin-left:12px !important;
+}
+ul.pf_tree li
+{
+    width:100% !important;
+    list-style:none !important;
+}
+ul.pf_tree li.fmpro_root
+{
+    margin:0px !important;
+}
+ul.pf_tree li a
+{
+    display:block;
+    margin-left:12px;
+    white-space:nowrap !important;
+    text-decoration:none !important;
+}
+a.tree_handle
+{
+    font-size:16px !important;
+    font-weight:bold !important;
+    color:#666 !important;
+    text-align:center !important;
+    width:16px !important;
+    display:block !important;
+    float:left !important;
+}
+span.tree_handle2
+{
+    font-size:16px !important;
+    font-weight:bold !important;
+    color:#ccc !important;
+    text-align:center !important;
+    width:16px !important;
+    display:block !important;
+    float:left !important;
+}
+a.tree_handle:hover
+{
+    font-size:16px !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+    font-weight:bold !important;
+    color:#000 !important;
+    text-align:center !important;
+}
+div.pf_tree_wrapper
+{
+    padding:10px 0px !important;
+    min-height: 100px !important;
+    float:left !important;
+    overflow:hidden !important;
+}
+.active_tree
+{
+}
+.pf_listv a span {
+background:url(../images/list_versions.png) no-repeat 0 0;
+}
+.pf_preview a span {
+background:url(../images/preview.png) no-repeat 0 0;
+}
+.pf_compare a span {
+background:url(../images/compare.png) no-repeat 0 0;
+}
+.pf_checkedout a span {
+background:url(../images/lock.png) no-repeat 0 0;
+}
+.pf_fm_restricted span {
+background:url(../images/restricted.png) no-repeat 0 0;
+padding-left:20px;
+padding-top:2px;
+}
+a.pf_fm_folder_home span {
+display:block;
+width:16px;
+height:16px;
+padding:0px;
+background:url(../images/home.png) no-repeat 0 0;
+}
+.pf_fm_folder_up span{
+padding-left:20px !important;
+padding-top:2px !important;
+}
+.pf_new_folder_up a span,
+.pf_fm_folder_up span{
+background:url(../images/arrow_top.png) no-repeat 0 50%;
+}
+.vc_version
+{
+    display:block;
+    font-size:9px;
+    padding-left:20px;
+}

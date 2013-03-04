@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="editors" method="upgrade" publish="true">
+	<name>sce</name>
+	<version>1.0-build${svn.lastrevision.plgadminpraiseSCE}</version>
+	<creationDate>2011-12-07</creationDate>
+	<author>AdminPraise</author>
+	<authorEmail>support@pixelpraise.com</authorEmail>
+	<authorUrl>http://www.adminpraise.com</authorUrl>
+	<copyright>Pixel Praise LLC</copyright>
+	<license>GNU/GPL</license>
+	<description>Simple Content Editor</description>
+  <files>
+    <filename plugin="sce">sce.php</filename>
+    <folder>sce</folder>
+  </files>
+	<languages  folder="administrator/language">
+		<language tag="en-GB">en-GB/en-GB.plg_editors_sce.ini</language>
+	</languages>
+	<params>
+
+   	</params>
+</install>

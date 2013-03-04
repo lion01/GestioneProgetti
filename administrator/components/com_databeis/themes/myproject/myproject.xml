@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="theme" version="2.2">
+    <name>myproject</name>
+	<title>MyProject</title>
+	<author>Kyle Ledbetter</author>
+	<email>support@databeis.net</email>
+	<website>http://www.databeis.net</website>
+	<version>3.3</version>
+	<license>PHP code is GPLv2 and all CSS and images are copyrighted</license>
+	<copyright>Copyright 2011 Pixel Praise LLC</copyright>
+	<date>06/29/2011</date>
+	
+	<languages>
+	    <language name="english">data/english.ini</language>
+	</languages>
+	
+	<files folder="data"></files>
+	
+	<params>
+		<param type="select" name="themeColor" title="COLOR" desc="THEME_COLOR" default="color1">
+	      <option value="color1">NAVY</option>
+	      <option value="color2">GRAY</option>
+	      <option value="color3">SILVER</option>
+	      <option value="color4">WHITE</option>
+	      <option value="color5">BLACK</option>
+	   </param>
+	   <param type="select" name="hide_info" title="HIDE_TASK_INFO" desc="HIDE_TASK_INFO_DESC">
+	      <option value="0">PFL_NO</option>
+	      <option value="1">PFL_YES</option>
+	   </param>
+	   <param type="select" name="hide_return" title="HIDE_RETURN" desc="HIDE_RETURN_DESC">
+	      <option value="0">PFL_NO</option>
+	      <option value="1">PFL_YES</option>
+	   </param>
+	   <param type="select" name="hide_footer" title="HIDE_FOOTER" desc="HIDE_FOOTER_DESC">
+	      <option value="0">PFL_NO</option>
+	      <option value="1">PFL_YES</option>
+	   </param>
+	   
+	</params>
+</install>

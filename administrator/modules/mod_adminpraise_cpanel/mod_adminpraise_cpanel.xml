@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0" method="upgrade" client="administrator" publish="true" position="adminpraise_cpanel_main">
+	<name>Adminpraise cpanel icons</name>
+	<author>Adminpraise.com</author>
+	<creationDate>2011-12-07</creationDate>
+	<copyright>All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com</authorEmail>
+	<authorUrl>www.adminpraise.com</authorUrl>
+	<version>1.0.0-build578</version>
+	<description><![CDATA[This module shows quick icons]]></description>
+	<languages folder="administrator/language/">
+		<language tag="en-GB">en-GB/en-GB.mod_adminpraise_cpanel.ini</language>
+	</languages>
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_adminpraise_cpanel">helper.php</filename>
+		<filename module="mod_adminpraise_cpanel">index.html</filename>
+		<filename module="mod_adminpraise_cpanel">mod_adminpraise_cpanel.php</filename>
+	</files>
+	<media destination="mod_adminpraise_cpanel" folder="media/mod_adminpraise_cpanel">
+		<folder>images</folder>
+		<file>index.html</file>
+	</media>
+	<params>
+	</params>
+</install>

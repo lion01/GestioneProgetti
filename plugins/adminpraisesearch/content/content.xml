@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="adminpraisesearch" method="upgrade" publish="true">
+	<name>adminpraise_search_content</name>
+	<author>adminpraise</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright (C) 2011 adminpraise.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com</authorEmail>
+	<authorUrl>www.adminpraise.com</authorUrl>
+	<description>Allows Searching of the site content in the backend</description>
+	<version>1.5</version>
+	<files>
+		<filename plugin="content">content.php</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	</params>
+</install>

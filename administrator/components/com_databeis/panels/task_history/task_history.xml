@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This is the install and config file of your panel. 
+Note: Tags marked as "Optional" can be removed entirely from the XML file if not needed.
+Tags marked as "Mandatory" must be present and contain data!
+-->
+<install type="panel" version="3.0">
+
+    <!-- (Mandatory) The "name" of your panel. Make sure you use no specialchars or whitespaces. -->
+    <name>task_history</name>
+    
+    <!-- 
+    (Mandatory) The title of your panel as it will be shown in the PF interface.
+    Note that you can use translatable strings - See /data/english.ini
+    -->
+	<title>TASK_HISTORY</title>
+	
+	<!-- (Optional) Your name -->
+	<author>GTK</author>
+	
+	<!-- (Optional) Your website -->
+	<website>GTK</website>
+	
+	<!-- (Optional) Your email address -->
+	<email></email>
+	
+	<!-- (Optional) The version of your panel. Use numerical values only! -->
+	<version>3000</version>
+	
+	<!-- (Optional) The license of your panel -->
+	<license>GNU/General Public License</license>
+	
+	<!-- (Optional) Copyright information -->
+	<copyright>Copyright 2012</copyright>
+	
+	<!-- (Optional) The date the panel was released -->
+	<date>2012</date>
+	
+	<!-- (Optional) The language file for your panel -->
+	<languages>
+	    <language name="english">pfdata/english.ini</language>
+		<language name="english">pfdata/italian.ini</language>
+	</languages>
+	
+	<!-- (Optional) The position on which your panel will be displayed on -->
+	<position>task_details_right</position>
+	
+	<!-- (Optional) Whether the panel is cache-able or not (1 = Yes, 0 = No) -->
+	<cache>0</cache>
+	
+	<!-- 
+    (Optional) Set criteria for when the panel should be cached.
+    Example: "project,user_id" Would re-cache the panel for every project and user
+    Possible triggers are:
+    project = Project ID
+    user_id = User ID
+    item_id = ID of an item (eg task id, project id etc)
+    section = Section name (eg tasks, projects etc)
+    task = Task name (eg display_details, form_new etc)
+    -->
+	<cache_trigger>project,user_id,item_id,section,task</cache_trigger>
+	
+	<!-- (Optional) The permission score required for this panel to become active/visible -->
+	<score>0</score>
+	
+	<!-- 
+    (Optional) The permission flag required for this panel to become active/visible.
+    Available flags are: system_administrator, project_administrator
+    -->
+	<flag></flag>
+	
+	<!-- (Optional) Set whether to show the panel title or not (1 = Yes, 0 = No) -->
+	<show_title>1</show_title>
+	
+	<!-- (Optional) Override panel default title. Only works when "show_title" is set to "1" -->
+	<override_title></override_title>
+	
+	<!-- 
+    (Mandatory) The files that are included in your panel 
+    Note the "folder" attribute. Databeis will copy all files from the "pfdata" folder
+    to their destined location: panels/<panel name>/
+    You don't need to put this xml file into data folder again. It will be copied over separately.
+    -->
+	<files folder="pfdata"></files>
+	
+	<!-- 
+    (Optional) Include a custom install file during the installation procedure.
+    Note: This file will be included once all files have been moved to their dest. folder:
+    panels/<panel name>/<install_file>
+    So the correct path to write here is: "<install_file>", and not: "pfdata/<install_file>"!
+    -->
+	<install_file></install_file>
+	
+	<!--
+    (Optional) Include a custom file when uninstalling. Same path rules as above
+    -->
+	<uninstall_file></uninstall_file>
+	
+	<!-- 
+    (Optional) Extra db queries to run during the installation procedure.
+    Each query must be listed as install_sql child element "sql". Example:
+    <install_sql>
+        <sql>Some query</sql>
+    </install_sql>
+    -->
+	<install_sql></install_sql>
+	
+	<!-- (Optional) Does the same thing as "install_sql", only that its for the uninstall procedure instead -->
+	<uninstall_sql></uninstall_sql>
+	
+	<!-- 
+    (Optional) This is where you can put your panel configuration settings.
+    Those settings can be seen and changed under: PF -> Config -> Panels -> Edit panel
+    or by pressing the "Edit" button in the specific panel container (if visible)
+    -->
+	<params>
+	</params>
+	
+</install>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="mod" version="2.2">
+    <name>mod_panel_task_comments</name>
+	<title>PANEL_TASK_COMMENTS_MOD</title>
+	<author>ANGEK DESIGN</author>
+	<website>http://www.angekdesign.com.au</website>
+	<version>1000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2011 ANGEK DESIGN</copyright>
+	<date>2011</date>
+	<languages>
+	    <language name="english">panel_data/english.ini</language>
+	</languages>
+	<files folder="panel_data"></files>
+	<uninstall_ext>
+	    <extension type="mod">mod_file_upload_in_task_comments</extension>
+	</uninstall_ext>
+</install>

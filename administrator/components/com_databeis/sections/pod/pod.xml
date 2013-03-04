@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This is the install and config file of your section. 
+Note: Tags marked as "Optional" can be removed entirely from the XML file if not needed.
+Tags marked as "Mandatory" must be present and contain data!
+-->
+<install type="section" version="3.0">
+
+    <!-- (Mandatory) The "name" of your section. Make sure you use no specialchars or whitespaces. -->
+    <name>pod</name>
+    
+    <!-- 
+    (Mandatory) The title of your section as it will be shown in the PF interface.
+    Note that you can use translatable strings - See /data/english.ini
+    -->
+	<title>POD</title>
+	
+	<!-- (Optional) Your name -->
+	<author>Cit</author>
+	
+	<!-- (Optional) Your website -->
+	<website>Soon</website>
+	
+	<!-- (Optional) Your email address -->
+	<email></email>
+	
+	<!-- (Optional) The version of your section. Use numerical values only! -->
+	<version>3000</version>
+	
+	<!-- (Optional) The license of your section -->
+	<license>GNU/General Public License</license>
+	
+	<!-- (Optional) Copyright information -->
+	<copyright>Copyright 2012 Cit</copyright>
+	
+	<!-- (Optional) The date the section was released -->
+	<date>202</date>
+	
+	<!-- (Optional) The language file(s) for your section -->
+	<languages>
+	    <language name="english">pfdata/english.ini</language>
+		<language name="english">pfdata/italian.ini</language>
+	</languages>
+	
+	<!-- (Optional) The permission score required for this section to become accessible -->
+	<score>1</score>
+	
+	<!-- 
+    (Optional) The permission flag required for this section to become accessible.
+    Available flags are: system_administrator, project_administrator
+    -->
+	<flag></flag>
+	
+	<!-- 
+    (Mandatory) The files that are included in your section 
+    Note the "folder" attribute. Databeis will copy all files from the "pfdata" folder
+    to their destined location: sections/<section name>/
+    You don't need to put this xml file into data folder again. It will be copied over separately.
+    -->
+	<files folder="pfdata"></files>
+	
+	<!-- 
+    (Optional) Include a custom install file during the installation procedure.
+    Note: This file will be included once all files have been moved to their dest. folder:
+    sections/<section name>/<install_file>
+    So the correct path to write here is: "<install_file>", and not: "pfdata/<install_file>"!
+    -->
+	<install_file></install_file>
+	
+	<!--
+    (Optional) Include a custom file when uninstalling. Same path rules as above
+    -->
+	<uninstall_file></uninstall_file>
+	
+	<!-- 
+    (Optional) Extra db queries to run during the installation procedure.
+    Each query must be listed as install_sql child element "sql". Example:
+    <install_sql>
+        <sql>Some query</sql>
+    </install_sql>
+    
+	<install_sql>
+	</install_sql>
+	
+	(Optional) Does the same thing as "install_sql", only that its for the uninstall procedure instead 
+	<uninstall_sql>
+	</uninstall_sql>
+	
+	
+    (Optional) The permissions/tasks (section=section_name*&task=some_task*) used for your section.
+    Basically every button/action needs to be mapped here. This is needed for the PF ACL.
+    The data will be stored in the table #__pf_section_tasks
+    -->
+	<permissions>
+	    <!-- 
+        This is a parent permission called "form_new".
+        It will be visible when adding/editing groups and in the section's config screen
+        -->
+	    <permission name="form_new" title="EXAMPLE_FORM_NEW" desc="EXAMPLE_FORM_NEW_DESC" score="1" flag="" tags="-ws" ordering="1"/>
+	    <!-- 
+        This is a child permission of the "form_new" permission.
+        It will not appear when adding/editing groups etc., but will automatically be granted if the parent task permission can be performed
+        -->
+	    <permission name="task_save" parent="form_new"/>
+	    
+	    <!-- 
+        This is a parent permission called "form_edit".
+        It will be visible when adding/editing groups and in the section's config screen
+        -->
+	    <permission name="form_edit" title="EXAMPLE_FORM_EDIT" desc="EXAMPLE_FORM_EDIT_DESC" score="1" flag="" tags="" ordering="1"/>
+	    <!-- 
+        This is a child permission of the "form_edit" permission.
+        It will not appear when adding/editing groups etc., but will automatically be granted if the parent task permission can be performed
+        -->
+	    <permission name="task_update" parent="form_edit"/>
+	</permissions>
+
+</install>

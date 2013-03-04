@@ -1,0 +1,118 @@
+/* Backend Only CSS */
+#pf-header{
+-moz-border-radius:5px 5px 0 0;
+}
+div#element-box #pf-wrapper div.m {
+padding:0 8px;
+}
+#pf_panel_nav_section .pf_navigation{
+height:auto;
+border:0;
+}
+#pf_panel_nav_section .pf_navigation:hover{
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+#pf_panel_nav_section li a,
+#pf_panel_nav_section li a:hover{
+background:transparent !important;
+}
+#pf-wrapper .pf_navigation #submenu-box li a {
+display:block;
+float:left;
+font-size:12px;
+line-height:12px;
+padding:0 15px;
+text-decoration:none;
+}
+#pf-wrapper .pf_navigation #submenu-box li a:hover{
+text-decoration:underline;
+}
+#pf-wrapper .pf_navigation #submenu-box li a:active span{
+top:0;
+}
+#pf_nav_config a span {
+display:inline;
+text-indent:0;
+width:auto;
+background:none;
+}
+.pf_navigation li#pf_nav_config {
+float:right;
+}
+.pf_navigation li#pf_nav_config a {
+border-right:0;
+border-left:1px solid #CCCCCC;
+width:auto;
+}
+.pf_navigation #submenu li.active_section a{
+color:#000;
+text-decoration:underline;
+}
+div#element-box #pf_panel_nav_section div.m {
+padding:0 8px;
+}
+#pf_nav_profile{
+display:inline;
+}
+#pf-wrapper table.adminlist{
+background:#FFF;
+}
+#pf-wrapper table.adminlist tbody tr td,
+#pf-wrapper table.adminlist thead th{
+height:auto;
+border:0;
+border-left:0;
+border-bottom:1px solid #DEDEDE;
+}
+#pf-wrapper #pf_panel_cp_events .pf_table th,
+#pf-wrapper #pf_panel_cp_events .pf_table td{
+border:1px solid #CCC;
+}
+#pf-wrapper table.adminlist tbody tr td.day,
+#pf-wrapper table.adminlist tbody tr td.day_we{
+height:100px;
+}
+dl.tabs{
+float:none !important;
+}
+dl.tabs dt{
+padding:10px !important;
+}
+#pf-wrapper dl.tabs dt{
+border:0;
+}
+#pf-wrapper dl.tabs dt.open{
+border-top-width:1px;
+border-right-width:1px;
+border-left-width:1px;
+}
+#pf_panel_nav_section_subnav .pf_navigation{
+margin:5px;
+}
+#pf-top{
+background-color:#FFF;
+padding-top:5px;
+}
+#pf-wrapper.pf-controlpanel{
+padding-top:0;
+}
+#pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li:last-of-type a:hover{
+-moz-border-radius:0;
+-webkit-border-bottom-right-radius:0;
+-webkit-border-top-right-radius:0;
+border-radius:0;
+}
+#module-menu #menu{
+z-index:900;
+}
+table.adminlist tbody tr tr,
+table.adminlist tbody tr td td{
+background-color:transparent;
+}
+#pf_panel_nav_section .pf_navigation li.active_section a,
+#pf_panel_nav_section .pf_navigation li a:hover {
+color:inherit !important;
+text-shadow:none !important;
+}

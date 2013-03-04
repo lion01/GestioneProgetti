@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>filemanager_pro</name>
+	<title>FILEMANAGER</title>
+	
+	<author>DataBeis</author>
+	<website>http://www.databeis.net</website>
+	<version>1601</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2009-2011 DataBeis</copyright>
+	<date>2011</date>
+	
+	<score>1</score>
+	<flag></flag>
+	
+	<languages>
+	    <language name="english">filemanager_pro/english.ini</language>
+	</languages>
+	
+    <files folder="filemanager_pro"></files>
+    
+    <permissions>
+        <permission name="form_new_folder" title="PFL_T_FM_FNFO" desc="PFL_T_FM_FNFO_DESC" score="1" flag="" tags="-ws" ordering="1"/>
+        <permission name="form_edit_folder" title="PFL_T_FM_FEFO" desc="PFL_T_FM_FEFO_DESC" score="1" flag="" tags="-ws" ordering="2"/>
+        <permission name="form_new_file" title="PFL_T_FM_FNFI" desc="PFL_T_FM_FNFI_DESC" score="1" flag="" tags="-ws" ordering="3"/>
+        <permission name="form_edit_file" title="PFL_T_FM_FEFI" desc="PFL_T_FM_FEFI_DESC" score="1" flag="" tags="-l" ordering="4"/>
+        <permission name="form_new_note" title="PFL_T_FM_FNN" desc="PFL_T_FM_FNN_DESC" score="1" flag="" tags="-ws" ordering="5"/>
+        <permission name="form_edit_note" title="PFL_T_FM_FEN" desc="PFL_T_FM_FEN_DESC" score="1" flag="" tags="-l" ordering="6"/>
+        <permission name="task_delete" title="PFL_T_FM_TD" desc="PFL_T_FM_TD_DESC" score="1" flag="" tags="-a" ordering="7"/>
+        <permission name="task_download" title="PFL_T_FM_TDO" desc="PFL_T_FM_TDO_DESC" score="1" flag="" tags="-l" ordering="8"/>
+        <permission name="display_note" title="PFL_T_FM_DN" desc="PFL_T_FM_DN_DESC" score="1" flag="" tags="-l" ordering="9"/>
+        <permission name="task_save_comment" title="PFL_T_FM_TSC" desc="PFL_T_FM_TSC_DESC" score="1" flag="" tags="-ws" ordering="10"/>
+        <permission name="form_edit_comment" title="PFL_T_FM_FEC" desc="PFL_T_FM_FEC_DESC" score="1" flag="" tags="-a" ordering="11"/>
+        <permission name="task_delete_comment" title="PFL_T_FM_TDC" desc="PFL_T_FM_TDC_DESC" score="1" flag="" tags="-a" ordering="12"/>
+        <permission name="list_move" title="PFL_T_FM_LM" desc="PFL_T_FM_LM_DESC" score="1" flag="" tags="-l" ordering="13"/>
+        <permission name="list_note_versions" title="PFL_T_FM_LNV" desc="PFL_T_FM_LNV_DESC" score="1" flag="" tags="-ws" ordering="14"/>
+        <permission name="form_compare_note" title="PFL_TT_FM_COMPARE" desc="PFL_TT_FM_COMPARE_DESC" score="1" flag="" tags="-ws" ordering="15"/>
+        <permission name="list_file_versions" title="PFL_T_FM_FNV" desc="PFL_T_FM_FNV_DESC" score="1" flag="" tags="-ws" ordering="16"/>
+        <permission name="task_save_folder" parent="form_new_folder"/>
+        <permission name="task_save_note" parent="form_new_note"/>
+        <permission name="task_save_file" parent="form_new_file"/>
+        <permission name="task_update_folder" parent="form_edit_folder"/>
+        <permission name="task_update_note" parent="form_edit_note"/>
+        <permission name="task_update_file" parent="form_edit_file"/>
+        <permission name="task_update_file" parent="form_edit_file"/>
+        <permission name="task_update_comment" parent="task_save_comment"/>
+        <permission name="task_move" parent="list_move"/>
+        <!-- Added in 1400 -->
+        <permission name="restrict_folder" title="PFL_T_FMPRO_RF" desc="PFL_T_FMPRO_RF_DESC" score="1" flag="project_administrator" tags="-ws" ordering="17"/>
+    </permissions>
+    
+    <params>
+	    <param type="slider_start" title="PFL_BASIC_SETTINGS" id="-basic"/>
+	        <param type="text" name="upload_path" title="PFL_UPLOAD_PATH" value="/images/com_databeis/filemanager" default="/images/com_databeis/filemanager" size="30"/>
+	        <param type="text" name="prev_extensions" title="PFL_PREV_EXTS" desc="PFL_PREV_EXTS_DESC" value="jpg,jpeg,png,gif" default="jpg,jpeg,png,gif" size="30"/>
+	        <param type="text" name="prev_size" title="PFL_PREV_SIZE" desc="PFL_PREV_SIZE_DESC" value="850" default="0" size="10"/>
+	        <param type="select" name="use_editor" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="use_comments" title="PFL_ENABLE_COMMENTS" desc="PFL_ENABLE_COMMENTS_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="quick_upload" title="PFL_QUICK_UPLOAD" desc="PFL_QUICK_UPLOAD_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="attach_folders" title="PFL_ATTACH_FOLDERS" desc="PFL_ATTACH_FOLDERS_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="attach_files" title="PFL_ATTACH_FILES" desc="PFL_ATTACH_FILES_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="attach_notes" title="PFL_ATTACH_NOTES" desc="PFL_ATTACH_NOTES_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="desc_tt" title="PFL_DESC_AS_TT" desc="PFL_DESC_AS_TT_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="use_addressbar" title="PFL_USE_ADDRESSBAR" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+            <param type="select" name="use_tree" title="PFL_USE_TREE" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+            <param type="text" name="tree_width" title="PFL_TREE_WIDTH" value="150" size="15" default="150"/>
+            <param type="select" name="use_checkin" title="PFL_USE_CHECKIN" default="1" desc="PFL_USE_CHECKIN_DESC">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	    <param type="slider_end"/>
+	    <param type="slider_start" title="PFL_FMPRO_VERSION_SETTINGS" id="-vc"/>
+	        <param type="select" name="note_vc" title="PFL_USE_NOTE_VC" desc="PFL_USE_NOTE_VC_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	        <param type="select" name="file_vc" title="PFL_USE_FILE_VC" desc="PFL_USE_FILE_VC_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+	    <param type="slider_end"/>
+        <param type="slider_start" title="PFL_FMPRO_COMPARISON_SETTINGS" id="-cp"/>
+            <param type="select" name="note_compare" title="PFL_USE_NOTE_COMPARE" desc="PFL_USE_NOTE_COMPARE_DESC" default="1">
+	            <option value="1">PFL_YES</option>
+	            <option value="0">PFL_NO</option>
+	        </param>
+            <param type="text" name="color_missing" title="PFL_MISSING_COLOR" value="white" default="white" size="15"/>
+            <param type="text" name="color_new" title="PFL_NEW_COLOR" value="white" default="white" size="15"/>
+            <param type="text" name="bg_missing" title="PFL_MISSING_BG" value="red" default="red" size="15"/>
+            <param type="text" name="bg_new" title="PFL_NEW_BG" value="yellow" default="yellow" size="15"/>
+        <param type="slider_end"/>
+	</params>
+	
+	<install_file>filemanager_pro.install.php</install_file>
+	
+	<install_sql>
+	    <sql>DROP TABLE IF EXISTS `#__pf_folder_access`;</sql>
+	    <sql>DROP TABLE IF EXISTS `#__pf_file_properties`;</sql>
+	    <sql>DROP TABLE IF EXISTS `#__pf_note_properties`;</sql>
+	    <sql>DROP TABLE IF EXISTS `#__pf_file_versions`;</sql>
+	    <sql>DROP TABLE IF EXISTS `#__pf_note_versions`;</sql>
+        <sql>
+            CREATE TABLE `#__pf_folder_access` (
+                         `id` int(11) NOT NULL AUTO_INCREMENT,
+                         `folder_id` int(11) NOT NULL,
+                         `group_id` int(11) NOT NULL,
+                          PRIMARY KEY (`id`),
+                          KEY `idx_folder_id` (`folder_id`),
+                          KEY `idx_group_id` (`group_id`)
+                        );
+        </sql>
+        <sql>
+            CREATE TABLE `#__pf_file_properties` (
+                         `id` int(11) NOT NULL AUTO_INCREMENT,
+                         `file_id` int(11) NOT NULL,
+                         `checked_out` int(1) NOT NULL,
+                         `checked_out_time` int(11) NOT NULL,
+                         `checked_out_user` int(11) NOT NULL,
+                         `locked` int(1) NOT NULL,
+                         `locked_user` int(11) NOT NULL,
+                         `status` varchar(64) NOT NULL,
+                          PRIMARY KEY (`id`),
+                          KEY `file_id` (`file_id`),
+                          KEY `checked_out` (`checked_out`),
+                          KEY `checked_out_user` (`checked_out_user`),
+                          KEY `locked` (`locked`),
+                          KEY `locked_user` (`locked_user`)
+                         );
+        </sql>
+        <sql>
+            CREATE TABLE `#__pf_note_properties` (
+                         `id` int(11) NOT NULL AUTO_INCREMENT,
+                         `note_id` int(11) NOT NULL,
+                         `checked_out` int(1) NOT NULL,
+                         `checked_out_time` int(11) NOT NULL,
+                         `checked_out_user` int(11) NOT NULL,
+                         `locked` int(1) NOT NULL,
+                         `locked_user` int(11) NOT NULL,
+                         `status` varchar(64) NOT NULL,
+                          PRIMARY KEY (`id`),
+                          KEY `note_id` (`note_id`),
+                          KEY `checked_out` (`checked_out`),
+                          KEY `checked_out_user` (`checked_out_user`),
+                          KEY `locked` (`locked`),
+                          KEY `locked_user` (`locked_user`)
+                        );
+        </sql>
+        <sql>
+            CREATE TABLE `#__pf_file_versions` (
+                         `id` int(11) NOT NULL auto_increment,
+                         `file_id` int(11) NOT NULL,
+                         `name` varchar(255) NOT NULL,
+                         `prefix` varchar(255) NOT NULL,
+                         `description` varchar(128) NOT NULL,
+                         `author` int(11) NOT NULL,
+                         `filesize` int(11) NOT NULL,
+                         `cdate` int(11) NOT NULL,
+                          PRIMARY KEY  (`id`),
+                          KEY `file_id` (`file_id`)
+                         );
+        </sql>
+        <sql>
+            CREATE TABLE `#__pf_note_versions` (
+                         `id` int(11) NOT NULL auto_increment,
+                         `note_id` int(11) NOT NULL,
+                         `title` varchar(56) NOT NULL,
+                         `description` varchar(128) NOT NULL,
+                         `content` text NOT NULL,
+                         `author` int(11) NOT NULL,
+                         `cdate` int(11) NOT NULL,
+                          PRIMARY KEY  (`id`),
+                          KEY `note_id` (`note_id`)
+                         );
+        </sql>
+	</install_sql>
+	
+	<uninstall_sql>
+		<sql>DELETE FROM `#__pf_file_properties`;</sql>
+		<sql>DELETE FROM `#__pf_file_versions`;</sql>
+		<sql>DELETE FROM `#__pf_note_properties`;</sql>
+		<sql>DELETE FROM `#__pf_note_versions`;</sql>
+		<sql>DELETE FROM `#__pf_folder_access`;</sql>
+		<sql>DROP TABLE `#__pf_note_versions`;</sql>
+		<sql>DROP TABLE `#__pf_note_properties`;</sql>
+		<sql>DROP TABLE `#__pf_file_properties`;</sql>
+		<sql>DROP TABLE `#__pf_file_versions`;</sql>
+		<sql>DROP TABLE `#__pf_folder_access`;</sql>
+		<sql>UPDATE `#__pf_sections` SET enabled = '1' WHERE name = 'filemanager';</sql>
+	</uninstall_sql>
+	
+	<uninstall_ext>
+	    <extension type="panel">filemanager_pro_attach</extension>
+	</uninstall_ext>
+
+</install>

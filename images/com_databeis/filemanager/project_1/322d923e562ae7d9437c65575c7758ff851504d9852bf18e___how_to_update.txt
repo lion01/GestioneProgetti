@@ -1,0 +1,29 @@
+================================================================
+Introduction
+================================================================
+This package contains the following extensions for Databeis 3.0.x:
+
+Databeis extensions
+* __update.zip - Updates both Status panels to the latest version
+
+Note: The update package will also upgrade Status for Databeis 2.1.x
+to work with 3.0.x!
+
+
+================================================================
+Update instructions - Databeis extensions
+================================================================
+* Navigate to Databeis -> Config.
+* Select the "__update.zip" package and install
+
+
+================================================================
+Support
+================================================================
+For support, please visit the official Databeis forum at 
+http://forum.databeis.net
+
+For updates, please visit the official Databeis site at
+http://databeis.net
+or
+http://download.databeis.net

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade" publish="true">
+	<name>activitylog_pro</name>
+	<type>plugin</type>
+	<author>AdminPraise</author>
+	<creationDate>2011-12-07</creationDate>
+	<copyright>Copyright (C) 2009-2010 Pixel Prais LLC. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>support@pixelpraise.com</authorEmail>
+	<authorUrl>www.adminpraise.com</authorUrl>
+	<version>1.4.0-build578</version>
+	<description>Joomla Administrator Activity Log</description>
+	<files>
+		<filename plugin="activitylog_pro">activitylog_pro.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

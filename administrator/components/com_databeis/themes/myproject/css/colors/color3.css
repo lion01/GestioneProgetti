@@ -1,0 +1,47 @@
+.color3 #pf-header{
+background:#5A5C57 url(../../images/theme3/header.png) repeat-x 0 0;
+}
+.color3 #pf-header #pf_panel_nav_section,
+.color3 #pf_panel_nav_section_subnav .pf_navigation:first-of-type {
+background:url(../../images/theme3/subnav.png) repeat-x scroll 0 0 transparent;
+}
+.color3 #pf_panel_nav_section li a,
+.color3 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a{
+color:#111;
+text-shadow:0px 1px 1px #FFF;
+font-weight:bold;
+}
+.color3 #pf_panel_nav_section .pf_navigation li.active_section a,
+.color3 #pf_panel_nav_section .pf_navigation li a:hover,
+.color3 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a:hover {
+background:url(../../images/theme3/subnav.png) repeat-x scroll 0 -40px transparent;
+text-shadow:0px -1px 1px #333;
+color:#FFF;
+}
+.color3 #pf_panel_nav_section_subnav .pf_navigation:first-of-type,
+.color3 #pf-header #pf_panel_nav_section li a,
+.color3 .pf_welcome,
+.color3 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a,
+.color3 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:hover,
+.color3 #pf-wrapper #pf_panel_nav_section_subnav .pf_navigation:first-of-type li a.pf_nav_gray:active,
+.color3 #pf_panel_quicklink_project select,
+.color3 dl.tabs,
+.color3 div.current,
+.color3 dl.tabs dt.open {
+border-color:#888;
+}
+.color3 #pf_panel_nav_section_subnav .pf_navigation:first-of-type{
+-moz-box-shadow:0 1px 1px #DDD;
+-webkit-box-shadow:0 1px 1px #DDD;
+box-shadow:0 1px 1px #DDD;
+}
+.color3 dl.tabs {
+background:#8D8E8A;
+}
+.color3 dl.tabs dt{
+color:#333;
+text-shadow:0 1px 1px #BBB;
+}
+.color3 dl.tabs dt.open {
+text-shadow:none;
+}

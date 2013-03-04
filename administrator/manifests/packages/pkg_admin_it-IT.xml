@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7">
+<name>Italian Language Pack</name>
+<packagename>it-IT_admin</packagename>
+<version>1.7</version>
+<url>http://www.joomla.it</url>
+<packager>Italian Translation Team</packager>
+<packagerurl></packagerurl>
+<description>Joomla 1.7 Italian Admin Language Package</description>
+<files>
+        <file type="language" client="administrator" id="it-IT">admin_it-IT.zip</file>
+</files>
+</extension>

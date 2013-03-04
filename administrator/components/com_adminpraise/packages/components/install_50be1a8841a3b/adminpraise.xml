@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.5.0" method="upgrade">
+    <name>Adminpraise</name>
+    <author>AdminPraise</author>
+    <creationDate>2011-12-07</creationDate>
+    <copyright>Copyright (C) Adminpraise.com . All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@adminpraise.com</authorEmail>
+    <authorUrl>http://adminpraise.com</authorUrl>
+    <version>1.2stable-build590</version>
+    <description>AdminPraise3 by 
+    &lt;a href=&quot;http://www.adminpraise.com&quot; target=&quot;_blank&quot;&gt;AdminPraise.com&lt;/a&gt;, a &lt;a href=&quot;http://www.adminpraise.com/joomla/admin-templates.php&quot; target=&quot;_blank&quot;&gt;Joomla Admin Templates&lt;/a&gt; &amp; &lt;a href=&quot;http://www.adminpraise.com/joomla/admin-extensions.php&quot; target=&quot;_blank&quot;&gt;Joomla Admin Extensions&lt;/a&gt; Developer&lt;br&gt;</description>
+    <administration>
+			<languages folder="administrator/language">
+				<language tag="en-GB">en-GB/en-GB.com_adminpraise.ini</language>
+				<language tag="en-GB">en-GB/en-GB.com_adminpraise.menu.ini</language>
+			</languages>
+			<menu>Adminpraise</menu>
+			<submenu>
+				<menu img="../media/com_adminpraise/images/toolbar/icon-16-config.png" view="settings">Admin Settings</menu>
+				<menu img="../media/com_adminpraise/images/toolbar/icon-16-menus.png" view="menu">Admin Menu</menu>
+				<menu img="../media/com_adminpraise/images/toolbar/icon-16-log.png" view="logs">Logs</menu>
+				<menu img="../media/com_adminpraise/images/toolbar/icon-16-help.png" view="help">Help and Docs</menu>
+				<menu img="../media/com_adminpraise/images/toolbar/icon-16-update.png" view="liveupdate">Live Update</menu>
+			</submenu>
+			<files>
+				<filename>adminpraise.php</filename>
+				<filename>changelog.php</filename>
+				<filename>index.html</filename>
+				<filename>install.adminpraise.php</filename>
+				<filename>uninstall.adminpraise.php</filename>
+				<filename>toolbar.adminpraise.php</filename>
+		    <folder>install</folder>
+		    <folder>packages</folder>
+			</files>
+    </administration>
+		<media destination="com_adminpraise" folder="media/com_adminpraise">
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>css</folder>
+			<file>index.html</file>
+		</media>
+    <scriptfile>install.adminpraise.php</scriptfile>
+<!--
+    <uninstallfile>uninstall.adminpraise.php</uninstallfile>
+-->
+</extension>

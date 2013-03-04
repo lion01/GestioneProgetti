@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade" publish="true">
+	<name>adminpraise_autoeditor</name>
+	<author>Adminpraise.com</author>
+	<creationDate>2011-12-07</creationDate>
+	<copyright>All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>services@compojoom.com</authorEmail>
+	<authorUrl>http://adminpraise.com</authorUrl>
+	<version>1.0-build578</version>
+	<description><![CDATA[
+	This plugins works together with adminpraise3 and the sce editor. It detects
+	the user browser and if it is a mobile one, automatically sets the default editor
+	to sce.
+	]]></description>
+	<files>
+		<filename plugin="adminpraise_autoeditor">adminpraise_autoeditor.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

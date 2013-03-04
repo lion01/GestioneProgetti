@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+    <name>cp_activitystream</name>
+	<title>CP_ACTIVITY_STREAM</title>
+	<author>DataBeis</author>
+	<website>http://www.databeis.net</website>
+	<version>2000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2009-2011 DataBeis</copyright>
+	<date>2011/04</date>
+	
+	<position>controlpanel_main</position>
+
+	<languages>
+	    <language name="english">cp_activitystream/cp_activitystream_en.ini</language>
+	    <language name="german">cp_activitystream/cp_activitystream_de.ini</language>
+	</languages>
+	
+	<files folder="cp_activitystream"></files>
+	
+	<params>
+	    <param type="select" name="filter_section" title="PFL_LOG_USE_SECTION_FILTER" desc="" default="1">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="filter_user" title="PFL_LOG_USE_USER_FILTER" desc="" default="1">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="restrict_view" title="PFL_LOG_RESTRICTVIEW" desc="PFL_LOG_RESTRICTVIEW_DESC" default="1">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="user_activity" title="PFL_LOG_SHOW_USER_ACTIVITY" desc="PFL_LOG_SHOW_USER_ACTIVITY_DESC" default="1">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="delete_single" title="PFL_LOG_DELETE_ITEM_LBL" desc="PFL_LOG_DELETE_ITEM_DESC" default="1">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="text" name="limit" value="10" default="10" title="PFL_LOG_LIST_LIMIT" desc="PFL_LOG_LIST_LIMIT_DESC" size="10"/>
+	   <param type="text" name="limit2" value="5" default="5" title="PFL_STATUS_LIST_LIMIT" desc="PFL_STATUS_LIST_LIMIT_DESC" size="10"/>
+	</params>
+	
+	<uninstall_ext>
+	    <extension type="process">activitystream</extension>
+	</uninstall_ext>
+
+</install>

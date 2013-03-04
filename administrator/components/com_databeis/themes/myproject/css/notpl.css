@@ -1,0 +1,104 @@
+/* Frontend No Template Only CSS */
+html{
+font-size:100%;
+height:100%;
+margin:0 0 1px 0;
+}
+body {
+font-size: 12px;
+min-width:990px;
+background:#F5F5F5;
+}
+body.contentpane{
+background:#F5F5F5;
+}
+*{
+margin:0;
+padding:0;
+}
+#pf-frontend-notemplate{
+padding:0;
+background: #F5F5F5;
+}
+a{
+color:#135CAE;
+}
+a:hover{
+color:#0B3768;
+}
+#pf-sidebar ul#submenu li#pf_nav_profile{
+display:none;
+}
+#pf-sidebar .pf_navigation span{
+padding:1px 0 1px 22px;
+background-image:url(../images/nav.png);
+background-repeat:no-repeat;
+}
+.pf-return-link span{
+padding:1px 0 1px 22px;
+}
+#pf-sidebar #pf_nav_controlpanel span{
+background-position:0 0;
+}
+#pf-sidebar #pf_nav_projects span{
+background-position:0 -22px;
+}
+#pf-sidebar #pf_nav_tasks span{
+background-position:0 -45px;
+}
+#pf-sidebar #pf_nav_filemanager span,
+#pf-sidebar #pf_nav_filemanager_pro span{
+background-position:0 -67px;
+}
+#pf-sidebar #pf_nav_calendar span{
+background-position:0 -90px;
+}
+#pf-sidebar #pf_nav_time span{
+background-position:0 -112px;
+}
+#pf-sidebar #pf_nav_board span{
+background-position:0 -135px;
+}
+#pf-sidebar #pf_nav_users span{
+background-position:0 -157px;
+}
+#pf-sidebar #pf_nav_groups span{
+background-position:0 -180px;
+}
+#pf-sidebar #pf_nav_config span{
+background-position:0 -203px;
+}
+
+/* MyProject */
+#pf-wrapper{
+min-height:1000px;
+}
+#pf_panel_nav_section_subnav .pf_navigation:first-of-type{
+position:absolute;
+top:-40px;
+left:220px;
+}
+#pf-sidebar ul{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#pf-sidebar a{
+	text-decoration: none;
+}
+body.contentpane,
+#all,
+#main{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#all{
+	max-width: 100% !important;
+}
+#theme_wrapper .theme_footer a{
+	color: #CCC;
+}
+#main a:hover,
+#main a:active,
+#main a:focus{
+	background: transparent;
+}

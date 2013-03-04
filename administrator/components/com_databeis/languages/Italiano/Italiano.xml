@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This is the install file of your language. 
+Note: Tags marked as "Optional" can be removed entirely from the XML file if not needed.
+Tags marked as "Mandatory" must be present and contain data!
+-->
+<install type="language" version="3.0">
+
+    <!-- 
+    (Mandatory) The "name" of your language. Make sure you use no specialchars or whitespaces.
+    Important: Language name must not contain a dot (.)
+    -->
+    <name>Italiano</name>
+    
+    <!-- 
+    (Mandatory) The title of your language as it will be shown in the PF interface.
+    Note that you cannot translate the title in language names!
+    -->
+	<title>Italiano</title>
+	
+	<!-- (Optional) Your name -->
+	<author>Cloud</author>
+	
+	<!-- (Optional) Your website -->
+	<website></website>
+	
+	<!-- (Optional) Your email address -->
+	<email>cloudshopes@gmail.com</email>
+	
+	<!-- (Mandatory) The version of your language. Use numerical values only! -->
+	<version>3081</version>
+	
+	<!-- (Optional) The license of your language -->
+	<license>GNU/General Public License</license>
+	
+	<!-- (Optional) Copyright information -->
+	<copyright></copyright>
+	
+	<!-- (Optional) The date the language was released -->
+	<date>October 07 2011</date>
+	
+	<!-- 
+    (Mandatory) The files that are included in your language 
+    Note the "folder" attribute. Databeis will copy all files from the "pfdata" folder
+    to their destined location: language/<language name>/
+    You don't need to put this xml file into data folder again. It will be copied over separately.
+    -->
+	<files folder="pfdata"></files>
+	
+</install>
